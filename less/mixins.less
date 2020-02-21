@@ -1,1 +1,24 @@
 // Mixins Here
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}
+.flex-rcolumn{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.custom-btn(@bg-color,@font-color,@width){
+    background-color:@bg-color;
+    color:@font-color;
+    cursor: pointer;
+    width:@width;
+    font-size:1.8em;
+    border-radius:5px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    &:hover{
+        background-color:@font-color;
+        color:@bg-color;
+    }
+}
